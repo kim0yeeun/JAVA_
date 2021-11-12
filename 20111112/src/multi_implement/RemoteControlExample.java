@@ -9,7 +9,7 @@ public class RemoteControlExample {
 		Searchable sc = (Searchable)st;
 		rc.turnOn();
 		rc.turnOff();
-		sc.search("ÀÌ¼ş¹«");
+		sc.search("ì´ìˆ­ë¬´");
 		
 	}
 

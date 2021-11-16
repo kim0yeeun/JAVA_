@@ -29,7 +29,7 @@ public class ArrayListEx1 {
 		for (int i=0; i<list1.size(); i++) {
 			Board b = list1.get(i);
 			System.out.println(b.getContent());
-		//	System.out.println(list1.);
+			System.out.println(list1.get(i).getContent());
 			
 		}
 	}

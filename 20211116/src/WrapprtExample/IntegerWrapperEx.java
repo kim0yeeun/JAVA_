@@ -1,7 +1,5 @@
 package WrapprtExample;
 
-import java.lang.ProcessBuilder.Redirect.Type;
-
 public class IntegerWrapperEx {
 
 	public static void main(String[] args) {

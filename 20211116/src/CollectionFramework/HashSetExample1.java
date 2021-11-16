@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
+//기본 자료형, String, Integer(Wrapper), 배열, class, list, set, map
 public class HashSetExample1 {
 	public static void main(String[] args) {
 		Set<String> set = new HashSet<String>();
@@ -33,7 +34,7 @@ public class HashSetExample1 {
 
 }
 
-// 기본 자료형, String, Integer(Wrapper), 배열, class, list, set, map
+
 
 
 

@@ -9,7 +9,7 @@ import java.util.Set;
 
 // Map Collection
 
-public class HashMapExamlpe {
+public class HashMapExamlpe1 {
 	public static void main (String[] args) {
 		// Dictionary : Key 와 Value 로 이루어진것 dic = {"a":1, "b":2} : Map 
 		

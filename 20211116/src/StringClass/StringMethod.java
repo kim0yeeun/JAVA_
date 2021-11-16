@@ -33,7 +33,7 @@ public class StringMethod {
 		
 		System.out.println("=====");
 		
-		str = "java";
+		str = "java"; // 이렇게 하믄안댜 
 		str1 = "java";
 		System.out.println(str1 == str);
 		
@@ -52,22 +52,51 @@ public class StringMethod {
 		int []ii = new int[5];
 		System.out.println(ii.length);
 		
-		int start = str1.indexOf("t");
-		System.out.println(str1.substring(start,start+8));
-		
-		str = "A:B/C-D,abcd";
-		//str2 =str1.split(":|/|-|,|");
-		//System.out.println(str2);
-		
 		// I를 i로 바꾸기
 		System.out.println(str1.replace('I', 'i'));
 		// I를 We로 바꾸기
 		System.out.println(str1.replaceAll("I", "We"));
+
+		
+		// 문자열을 split을 하면 배열로 저장
+		str = "A:B:C:D:abcd";
+		String[] str2 =str.split(":");
+		System.out.println(str2[1]);
+		str = "A B C D abcd";
+		str2 = str.split(" ");
+		System.out.println(str2[1]);
 		
 		
+		// 파이썬에서는 slicing  : a = "abcdef" : a[1:3]
+		// 자바에선 substring
+		str1 = "abcdef";
+		System.out.println(str1.substring(1, 1 + 2));
+		str1 = "I like the java";
+		int start = str1.indexOf("t");
+		System.out.println(str1.substring(start, start + 8));
 		
 		
+		// 대문자 <-> 소문자
+		str1 = "abcDEF";
+		System.out.println(str1.toLowerCase());
+		System.out.println(str1.toUpperCase());
 		
+		// 숫자를 문자로 변경
+		Integer i = 10;
+		str = "10" + i.toString(); // 숫자를 문자로 변경
+		System.out.println(str);
+		
+		// 양쪽 공백 지우기
+		str1 = " abc DEF "; // strip
+		System.out.println(str1.trim());
+		
+		// : / - , 로 substring 하기 
+		str = "A:B/C-D,abcd";
+		str2 = str.split(":|/|-|,");
+		for (int i1=0; i1<str2.length ; i1++) {
+			System.out.println(str2[i1]);
+		}
+		System.out.println(str2[1]);
 	}
 
 }

@@ -13,6 +13,7 @@ public class ArrayListEx {
 		// 리스트는 중복되는 값이 저장된다. 
 		list.add("문자열3");
 		list.set(2, "수정된문자열3");
+		// object로 저장된 경우 아래처럼 사용하지 않는다. 
 		for (int i=0; i<list.size(); i++) {
 			System.out.println((String)list.get(i));   // 스트링으로 변환해서 출력해야한다. 
 		}											   // 근데 이렇게 사용 안한다.
@@ -33,8 +34,8 @@ public class ArrayListEx {
 		
 		System.out.println("=====");
 		
+		
 		// 리스트에 있는 값을 삭제
-
 		System.out.println("list1의 사이즈 : " + list1.size());
 		list1.remove(0); // 인덱스로 삭제
 		System.out.println("list1의 사이즈 : " + list1.size());
